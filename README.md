@@ -42,4 +42,4 @@
 ### Association
 
 - belongs_to :user
-- belongs_tp :prototype
+- belongs_to :prototype
