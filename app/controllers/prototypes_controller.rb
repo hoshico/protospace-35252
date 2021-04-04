@@ -1,4 +1,6 @@
 class PrototypesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy] 
+
   def index
     @prototype = Prototype.all.includes(:user)
   end
